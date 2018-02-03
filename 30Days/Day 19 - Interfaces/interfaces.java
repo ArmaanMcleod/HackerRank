@@ -5,21 +5,7 @@ interface AdvancedArithmetic{
    int divisorSum(int n);
 }
 
-class Calculator implements AdvancedArithmetic {
-    
-    @Override
-    public int divisorSum(int n) {
-        int div = 0;
-        
-        for (int i = 1; i <= n; i++) {
-            if (n % i == 0) {
-                div += i;
-            }
-        }
-        
-        return div;
-    }
-}
+
 
 class Solution {
 
