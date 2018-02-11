@@ -7,8 +7,8 @@ class Solution:
         if root==None:
             return Node(data)
         else:
-            if data<=root.data:
                 cur=self.insert(root.left,data)
+            if data<=root.data:
                 root.left=cur
             else:
                 cur=self.insert(root.right,data)
