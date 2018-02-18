@@ -1,3 +1,5 @@
+# Hackerrank Detect HTML tags problem
+
 from contextlib import redirect_stdout
 from html.parser import HTMLParser
 
@@ -14,7 +16,7 @@ def main():
 
     with open('out.txt', 'w') as out:
         with redirect_stdout(out):
-            print(parser.feed(''.join(html)))
+            print(parser.feed(html))
 
     with open('out.txt') as out:
         seen = {line.strip() for line in out}
